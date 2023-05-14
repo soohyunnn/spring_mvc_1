@@ -23,6 +23,9 @@ public class MemberListControllerV1 implements ControllerV1 {
 
         String viewPath = "/WEB-INF/views/members.jsp";
         RequestDispatcher dispatcher = req.getRequestDispatcher(viewPath);
+
+        System.out.println("dispatcher :: " + dispatcher);
+
         dispatcher.forward(req, resp);
     }
 }
