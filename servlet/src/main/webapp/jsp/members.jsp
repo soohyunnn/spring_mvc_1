@@ -20,7 +20,7 @@
     <th>age</th>
     </thead>
     <tbody>
-    <
+    <%
         for (Member member : members) {
             out.write("    <tr>\n");
             out.write("<td>" + member.getId() + "</td>\n");
