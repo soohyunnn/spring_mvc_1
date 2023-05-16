@@ -32,65 +32,11 @@ public class RequestParamController {
             @RequestParam("username") String memberName,
             @RequestParam("age") int memberAge
     ) {
-<<<<<<< HEAD
-=======
 
         log.info("username={}, age={}", memberName, memberAge);
         return "ok";
     }
-
-    @ResponseBody
-    @RequestMapping("/request-param-v3")
-    public String requestParamV3(
-            @RequestParam String username,
-            @RequestParam int age
-    ) {
-
-        log.info("username={}, age={}", username, age);
-        return "ok";
-    }
-
-    @ResponseBody
-    @RequestMapping("/request-param-v4")
-    public String requestParamV4(String username, int age) {
-        log.info("username={}, age={}", username, age);
-        return "ok";
-    }
-
-    @ResponseBody
-    @RequestMapping("/request-param-required")
-    public String requestParamRequires(
-            @RequestParam(required = true) String username,
-            @RequestParam(required = false) Integer age
-    ) {
-        log.info("username={}, age={}", username, age);
-        return "ok";
-    }
-
-    @ResponseBody
-    @RequestMapping("/request-param-default")
-    public String requestParamDefault(@RequestParam(required = true, defaultValue = "guest") String username,
-                                      @RequestParam(required = false, defaultValue = "-1") int age) {
-
-        log.info("username={}, age={}", username, age);
-        return "ok";
-    }
-
-
-    @ResponseBody
-    @RequestMapping("/request-param-map")
-    public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
-
-        log.info("username={}, age={}", paramMap.get("username"), paramMap.get("age"));
-        return "ok";
-    }
-
-
->>>>>>> d279bd0b49990cca5fb847391bc41a3a344f0f2b
-
-        log.info("username={}, age={}", memberName, memberAge);
-        return "ok";
-    }
+    
 
     @ResponseBody
     @RequestMapping("/request-param-v3")
