@@ -36,7 +36,7 @@ public class RequestParamController {
         log.info("username={}, age={}", memberName, memberAge);
         return "ok";
     }
-    
+
 
     @ResponseBody
     @RequestMapping("/request-param-v3")
